@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JOZON</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+<style>
+    .mission-vision-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .mission-vision-card {
+      width: 48%;
+      padding: 30px;
+    }
+  </style>
+
+
+<style>
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .address-section,
+    .working-hours-section {
+      width: 48%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .address-section {
+      background-color: aqua;
+    }
+
+    .working-hours-section {
+      background-color: #6b7c93; /* Blue-gray color */
+    }
+  </style>
+
+<style>
+    .product-heading {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed */
+    }
+  </style>
+
+<style>
+    .about-heading {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed */
+    }
+  </style>
+
+<style>
+    .contact-heading {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed */
+    }
+  </style>
+
+<style>
+    body {
+      background-color: black;
+      color: white; /* Set text color to white for better visibility */
+    }
+  </style>
+
+<style>
+    h1, h2, h3, h4, h5, h6, p {
+      animation: slideInFromBottom 1s ease-out; /* Adjust the animation duration and easing as needed */
+    }
+
+    @keyframes slideInFromBottom {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+
+
+<style>
+    /* Custom animation for w3-animate-bottom */
+    .animate-bottom {
+      animation: animateBottom 1s ease-out; /* Adjust the animation duration and easing as needed */
+    }
+
+    @keyframes animateBottom {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+
+
+
+</head>
+<body >
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile"><b>Logo</b></a>
+    <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile"><b>JOZON</b> Plastics</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#product" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile">Products</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile">Contact</a>
+      <a href="#envelope" class="w3-bar-item w3-button w3-mobile w3-hover-white "><i class="fa fa-envelope"></i></a>
+      <a href="#telephone" class="w3-bar-item w3-button w3-mobile w3-hover-white "><i class="fa fa-telephone"></i></a>
+      <!---i style='font-size:24px' class='fas'>&#xf199;</i-->
+      <!---i style='font-size:24px' class='fas'>&#xf098;</i-->
+      <!---i style='font-size:24px' class='fab'>&#xf232;</i-->
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="mySlides " src="images\home1.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>JOZON</b></span> <span class="w3-hide-small w3-text-light-grey">Plastics</span></h1>
+    <p><a href="#menu" class="w3-button w3-xlarge w3-blue w3-border w3-hover-white">Who we are</a></p>
+    
+  </div>
+
+
+   <img class="mySlides " src="images\home2.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>JOZON</b></span> <span class="w3-hide-small w3-text-light-grey">Plastics</span></h1>
+    <p><a href="#menu" class="w3-button w3-xlarge w3-blue w3-border w3-hover-white">Who we are</a></p>
+    
+    </div>
+
+   <img class="mySlides " src="images\home3.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>JOZON</b></span> <span class="w3-hide-small w3-text-light-grey">Plastics</span></h1>
+    <p><a href="#menu" class="w3-button w3-xlarge w3-blue w3-border w3-hover-white">Who we are</a></p>
+    
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Product Section -->
+<div class="w3-container w3-padding-16 animate-bottom" id="product">
+  <h1 class="store-heading" style="font-family: 'Copperplate', fantasy;">Products</h1>
+  <!-- Other content of your Store page goes here -->
+</div>
+   
+  
+  <div class="w3-row-padding animate-bottom">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-animate-opacity">
+        <div class="w3-display-topleft w3-black w3-padding">Varities</div>
+        <img src="images\prod1.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Bottles plastic</div>
+        <img src="images\prod2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Jugs</div>
+        <img src="images\prod3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sauces</div>
+        <img src="images\prod4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding animate-bottom">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Tubes</div>
+        <img src="images\prod5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Platelets</div>
+        <img src="images\prod6.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sprayers</div>
+        <img src="images\prod7.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sievers</div>
+        <img src="images\prod8.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+
+<div class="w3-container w3-padding-16 animate-bottom" >
+ <marquee>
+    <h1>Services:</h1>
+    <h3>
+      Injection Molding---- 
+      Extrusion----
+      Blow Molding----
+      Thermoforming---- 
+      Plastic Recycling---- 
+      Custom Plastic Fabrication----
+      Mold Design and Prototyping---- 
+      Assembly Services----
+      Product Development----
+      Material Selection and Consulting---- 
+      Packaging Solutions---- 
+      Custom Coloring and Finishing---- 
+      Biodegradable and Eco-Friendly Plastics---- 
+      Supply Chain Management----
+      Logistics and Distribution----
+    </h3>
+  </marquee>
+</div>
+
+  
+  <!-- About Section -->
+
+ <div class="w3-container w3-padding-16 animate-bottom" id="about" >
+  <h1 class="store-heading" style="font-family: 'Copperplate', fantasy;">About</h1>
+  <!-- Other content of your Store page goes here -->
+  </div>
+
+   <p><b>Welcome to Jozon, your go-to destination for quality products in Nigeria. 
+      We are here to provide exceptional customer service and create a seamless shopping experience for you. 
+      Enjoy our loyalty programs and benefit from the expertise of our qualified staff. 
+      Shop with confidence at Jozon and discover a wide range of products tailored to your needs.
+    </p><b/>
+  </div>
+
+<div class="w3-container w3-padding-16">
+  <div class="w3-card mission-vision-container">
+
+    <!-- Mission Statement Card -->
+    <div class="w3-card-4 mission-vision-card">
+      <div class="w3-container w3-aqua">
+        <h2>Mission</h2>
+      </div>
+      <div class="w3-container">
+        <p><b>Our mission is to passionately innovate and manufacture environmentally conscious plastic products, candles, soaps,
+           and more. We are dedicated to producing high-quality, biodegradable items that contribute to a sustainable future.
+        </p></b>
+        <!-- Add your mission statement here -->
+      </div>
+    </div>
+
+    <!-- Vision Statement Card -->
+    <div class="w3-card-4 mission-vision-card">
+      <div class="w3-container w3-blue-gray">
+        <h2>Vision</h2>
+      </div>
+      <div class="w3-container">
+        <p><b>We envision a world where our factory is a global leader in the production of biodegradable plastic products, candles, and soaps.
+           By prioritizing innovation and sustainability, we aim to enhance the well-being of humanity and leave a positive impact on 
+           the planet for generations to come.
+        </p></b>
+        <!-- Add your vision statement here -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="Your picture" style="width:100%">
+      <h3>Your Name</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>What do you like people to know about in relating to this company.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+     <!--- repeat like this block if you want more--->
+  </div>
+
+  <!-- Contact Section -->
+   <div class="w3-container w3-padding-16" id="contact" >
+  <h1 class="store-heading" style="font-family: 'Copperplate', fantasy;">Contact</h1>
+  <!-- Other content of your Store page goes here -->
+  <!-- Other content of your Store page goes here -->
+  </div>
+    
+   <div class="w3-container w3-padding-16">
+  <div class="contact-container">
+
+    <!-- Address Section -->
+    <div class="w3-card-4 address-section" style="color: black;">
+      <h2>Address</h2>
+      <p>We’re excited to meet you! Feel free to get in touch with us within these working hours.</p>
+      <p><strong>Email:</strong> jozon@gmail.com</p>
+      <p><strong>Phone:</strong> 2348066493451</p>
+      <p><strong>Address:</strong> Nigeria army cantonment, Ojo, Lagos, Nigeria</p>
+    </div>
+
+    <!-- Working Hours Section -->
+    <div class="w3-card-4 working-hours-section">
+      <h2>Working Hours</h2>
+      <p><strong>Monday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Tuesday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Wednesday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Thursday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Friday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Saturday</strong><br>09:00 am - 07:30 pm</p>
+      <p><strong>Sunday</strong><br>09:00 am - 07:30 pm</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-container">
+  <h2>Subscribe form</h2>
+   <p>Want to be in the know? Subscribe to a newsletter to get all news and weekly updates.</p>
+    <form action="https://example.com/submit_form" method="post" class="contact-form">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="images\map2.jpg" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-mobile"><b>Logo</b></a>
+  <p>Designed by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Automartin</a></p>
+</footer>
+
+
+
+
+
+
+</body>
+
+<!-- JavaScript for scroll-triggered animation -->
+<script>
+  window.addEventListener('scroll', function() {
+    var elements = document.querySelectorAll('.animate-bottom');
+    
+    elements.forEach(function(element) {
+      var position = element.getBoundingClientRect().top;
+      
+      if (position < window.innerHeight) {
+        element.classList.add('w3-animate-bottom');
+      }
+    });
+  });
+</script>
+
+</html>
